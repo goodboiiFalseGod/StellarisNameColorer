@@ -1,0 +1,23 @@
+﻿<Window x:Class="StellarisNamesColorer.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:StellarisNamesColorer"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" Name="WindowObject">
+    <Grid>
+        <StackPanel>
+            <TextBlock Text="Enter text in the field below" Margin="10, 10, 10, 10" Width="300" HorizontalAlignment="Left"/>
+            <TextBox Name="TextField" Margin="10, 0, 10, 10" Width="300" HorizontalAlignment="Left"/>
+            <Button Margin="10, 0, 0, 0" Width="50" HorizontalAlignment="Left" Name="CopyButton">
+                <TextBlock Text="Copy"/>
+            </Button>
+            <WrapPanel Margin="10, 10, 10, 10">
+                <TextBlock Text="Select color" VerticalAlignment="Center"/>
+                <ComboBox Margin="10, 0, 0, 0" Width="150" Name="ColorSelection">
+                </ComboBox>
+            </WrapPanel>
+        </StackPanel>
+    </Grid>
+</Window>
